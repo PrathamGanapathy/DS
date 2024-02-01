@@ -17,7 +17,6 @@ struct ListNode** splitListToParts(struct ListNode* head, int k, int* returnSize
             temp = temp1->next;
             temp1->next = NULL;
     }
-    // printf("%d %d %d", lists[0]->val, lists[1]->val, lists[2]->val);
     if (temp == NULL) return lists;
     for(int i = 0; i < k-earlier_lists; i++){
             struct ListNode* temp1 = temp;
@@ -26,12 +25,6 @@ struct ListNode** splitListToParts(struct ListNode* head, int k, int* returnSize
             lists[current++] = temp;
             temp = temp1->next;
             temp1->next = NULL;
-            // for(int l = 0; l < k; l++){
-            //     for(struct ListNode* temp2 = lists[l]; temp2 != NULL; temp2 = temp2->next){
-            //         printf("%d ", temp2->val);
-            //     }
-            //     printf("\n");
-            // }
     }
     return lists;
 }
