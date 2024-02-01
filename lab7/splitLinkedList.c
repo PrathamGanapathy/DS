@@ -10,7 +10,6 @@ struct ListNode** splitListToParts(struct ListNode* head, int k, int* returnSize
     temp = head;
     *returnSize = k;
     for(int i = earlier_lists; i > 0; i--){
-            // printf("Entering here\n");
             struct ListNode* temp1 = temp;
             lists[current++] = temp;
             for(int j = 0; j < size; j++) temp1 = temp1->next;
