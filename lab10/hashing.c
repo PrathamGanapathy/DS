@@ -16,7 +16,7 @@ void display();
 int main(){
     for(int i = 0; i < size; i++) table[i] = -1;
     int choice;
-    printf("1. Insert\n2. Search\n3. Delete\n4. Exit\nChoice: ");
+    printf("1. Insert\n2. Delete\n3. Display\n4. Exit\nChoice: ");
     scanf("%d", &choice);
     int a;
     while(choice != 4){
